@@ -12,7 +12,7 @@ services:
     hostname: goshimmer
     restart: unless-stopped
     volumes:
-      - "./db:/dev/sda1/mainnetdb:rw"   
+      - "./db:/dev/xvda/mainnetdb:rw"   
       - "/etc/localtime:/etc/localtime:ro"
     ports:
       # Autopeering 
