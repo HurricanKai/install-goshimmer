@@ -1,12 +1,8 @@
 version: '3.3'
 
-networks:
-  outside:
-    external:
-      name: shimmer
-
 services:
   goshimmer:
+    network_mode: "host"
     image: iotaledger/goshimmer:latest
     container_name: goshimmer
     hostname: goshimmer
@@ -45,5 +41,3 @@ services:
       --logger.level=info
       --logger.disableEvents=false
       --logger.remotelog.serverAddress=ressims.iota.cafe:5213
-    networks:
-      - outside
