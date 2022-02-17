@@ -14,7 +14,7 @@ mkdir /opt/goshimmer
 cd /opt/goshimmer
 mkdir db
 chmod 0777 db
-wget https://raw.githubusercontent.com/demichele/install-goshimmer/master/docker-compose.yml
+wget https://raw.githubusercontent.com/HurricanKai/install-goshimmer/master/docker-compose.yml
 #mkdir -p prometheus/data
 #chmod -R 777 prometheus
 #cd prometheus
